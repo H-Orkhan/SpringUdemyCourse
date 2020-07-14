@@ -7,20 +7,19 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-
-    <context:property-placeholder location="classpath:Step5\\sport.properties"/>
-
     <bean id="myFortune"
-               class="Step5_PropertiesInjection.FortuneService">
+               class="Step6_BeanScope.FortuneService">
     </bean>
 
     <bean id="myCoach"
-              class="Step5_PropertiesInjection.CricketCoach">
-        <property name="fortuneService" ref="myFortune" />
+              class="Step6_BeanScope.CricketCoach"
+            scope="prototype">
 
-        <property name="teamName"  value="${foo.teamName}" />
-        <property name="teamEmail" value="${foo.teamEmail}"/>
-    </bean>
+       <!--  If scope is singleton,there will be created same objects,that will be single in memory-->
+       <!--  If scope is prototype,there will be created different objects in memory-->
+
+        <property name="fortuneService" ref="myFortune" />
+ </bean>
 
 </beans>
 
