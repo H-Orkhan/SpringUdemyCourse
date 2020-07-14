@@ -6,7 +6,7 @@ public class Application {
 
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("Step6\\BeanScope_ApplicationContext.xml");
+                new ClassPathXmlApplicationContext("Step6\\BeanLifeCycle_ApplicationContext.xml");
 
         Coach myCoach = context.getBean("myCoach", CricketCoach.class);
 
