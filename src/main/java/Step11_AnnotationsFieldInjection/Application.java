@@ -1,4 +1,4 @@
-package Step10_AnnotationsSetterInjection;
+package Step11_AnnotationsFieldInjection;
 
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -7,7 +7,7 @@ public class Application {
     public static void main(String[] args) {
 
         ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("Step10\\AnnotationsFieldInjection.xml");
+                new ClassPathXmlApplicationContext("Step11\\AnnotationsFieldInjection.xml");
 
         Coach coach = context.getBean("Coach", Coach.class);
 
