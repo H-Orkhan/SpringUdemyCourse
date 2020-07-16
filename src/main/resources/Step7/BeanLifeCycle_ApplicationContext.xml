@@ -13,7 +13,6 @@
 
     <bean id="myCoach"
           class="Step7_BeanLifeCycle.CricketCoach"
-
           init-method="start"
           destroy-method="finish">
 

@@ -12,10 +12,12 @@
     class="Step2_DependencyInjection.FortuneService">
     </bean>
 
+<!--    When I will getBean of ID so it will paste in arg of constructor class with beanID myFortune-->
     <bean id="myCoach"
           class="Step2_DependencyInjection.FootballCoach">
         <constructor-arg ref="myFortune" />
     </bean>
+
 
 
 </beans>

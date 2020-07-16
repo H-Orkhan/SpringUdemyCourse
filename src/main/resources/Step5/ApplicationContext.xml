@@ -14,6 +14,7 @@
           class="Step5_PropertiesInjection.FortuneService">
     </bean>
 
+<!--    Same thing , but now I paste text from properties file,not via value from ApplicationContext.xml-->
     <bean id="myCoach"
           class="Step5_PropertiesInjection.CricketCoach">
         <property name="fortuneService" ref="myFortune"/>

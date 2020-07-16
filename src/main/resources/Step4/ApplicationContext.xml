@@ -12,6 +12,7 @@
           class="Step4_LiteralInjection.FortuneService">
     </bean>
 
+<!--    Via value I can paste text to String fields of class with ID -->
     <bean id="myCoach"
           class="Step4_LiteralInjection.CricketCoach">
         <property name="fortuneService" ref="myFortune"/>

@@ -7,17 +7,7 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-
-    <bean id="myFortune"
-    class="Step3_SetterInjection.FortuneService">
-    </bean>
-
-<!--    Same thing,but now I will paste ID via setter not constructor arg -->
-    <bean id="myCoach"
-          class="Step3_SetterInjection.CricketCoach">
-        <property name="fortuneService" ref="myFortune" />
-    </bean>
-
+   <context:component-scan base-package="Step9_AnnotationsConstructorInjection"/>
 
 </beans>
 
