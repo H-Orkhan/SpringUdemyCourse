@@ -8,16 +8,17 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean id="myFortune"
-               class="Step7_BeanLifeCycle.FortuneService">
+          class="Step7_BeanLifeCycle.FortuneService">
     </bean>
 
     <bean id="myCoach"
-              class="Step7_BeanLifeCycle.CricketCoach"
-            init-method="start"
-            destroy-method="finish">
+          class="Step7_BeanLifeCycle.CricketCoach"
 
-        <property name="fortuneService" ref="myFortune" />
- </bean>
+          init-method="start"
+          destroy-method="finish">
+
+        <property name="fortuneService" ref="myFortune"/>
+    </bean>
 
 </beans>
 

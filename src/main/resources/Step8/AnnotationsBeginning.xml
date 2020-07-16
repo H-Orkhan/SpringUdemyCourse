@@ -7,20 +7,8 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+   <context:component-scan base-package="Step8_AnnotationsBeginning"/>
 
-    <context:property-placeholder location="classpath:Step5\\sport.properties"/>
-
-    <bean id="myFortune"
-          class="Step5_PropertiesInjection.FortuneService">
-    </bean>
-
-    <bean id="myCoach"
-          class="Step5_PropertiesInjection.CricketCoach">
-        <property name="fortuneService" ref="myFortune"/>
-
-        <property name="teamName" value="${foo.teamName}"/>
-        <property name="teamEmail" value="${foo.teamEmail}"/>
-    </bean>
 
 </beans>
 

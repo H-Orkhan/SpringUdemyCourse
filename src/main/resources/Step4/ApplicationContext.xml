@@ -9,14 +9,14 @@
 
 
     <bean id="myFortune"
-               class="Step4_LiteralInjection.FortuneService">
+          class="Step4_LiteralInjection.FortuneService">
     </bean>
 
     <bean id="myCoach"
-              class="Step4_LiteralInjection.CricketCoach">
-        <property name="fortuneService" ref="myFortune" />
+          class="Step4_LiteralInjection.CricketCoach">
+        <property name="fortuneService" ref="myFortune"/>
 
-        <property name="teamName" value="BestTeamEver" />
+        <property name="teamName" value="BestTeamEver"/>
         <property name="teamEmail" value="mail"/>
     </bean>
 
