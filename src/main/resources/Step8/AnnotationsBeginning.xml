@@ -9,7 +9,6 @@
 
    <context:component-scan base-package="Step8_AnnotationsBeginning"/>
 
-
 </beans>
 
 
