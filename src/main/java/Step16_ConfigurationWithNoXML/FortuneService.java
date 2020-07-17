@@ -1,7 +1,6 @@
 package Step16_ConfigurationWithNoXML;
 
-public interface Coach {
+public interface FortuneService {
 
     public String getFortune();
-    public String getDailyWorkout();
 }
